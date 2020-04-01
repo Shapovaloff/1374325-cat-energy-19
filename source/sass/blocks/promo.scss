@@ -1,10 +1,10 @@
 .promo__wrapper {
+  @include container-mobile();
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(to top, transparent 197px, $dark-green 197px);
   background-position: center top;
   background-repeat: no-repeat;
-  @include container-mobile();
   padding-top: 26px;
   padding-bottom: 22px;
 }

@@ -1,6 +1,7 @@
 .page-footer__info {
   background-color: $grey;
 }
+
 .page-footer__wrapper {
   @include container-mobile();
   display: flex;

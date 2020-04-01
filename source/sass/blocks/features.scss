@@ -17,21 +17,22 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
-  &::before {
-    content: "";
-    position: static;
-    display: block;
-    flex-shrink: 0;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    background-color: $accent-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50px 50px;
-  }
+}
+
+.features__item::before {
+  content: "";
+  position: static;
+  display: block;
+  flex-shrink: 0;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 50px;
 }
 
 .features__item--health::before {
