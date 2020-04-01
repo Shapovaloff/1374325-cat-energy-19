@@ -17,11 +17,11 @@
 
 .page-header__toggle {
   position: relative;
+  display: block;
   width: 65px;
   height: 65px;
   padding: 0;
   border: 0;
-  display: block;
   background-color: transparent;
 }
 
@@ -29,10 +29,10 @@
 .page-header__toggle::after {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 2px;
   top: 32px;
   right: 22px;
+  width: 24px;
+  height: 2px;
   background-color: #000000;
 }
 

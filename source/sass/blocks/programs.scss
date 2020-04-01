@@ -8,79 +8,79 @@
 
 .programs__item {
   position: relative;
-  background-color: $grey;
-  padding: 30px 20px 20px 20px;
   margin-bottom: 20px;
+  padding: 30px 20px 20px 20px;
+  background-color: $grey;
 }
 
 .programs__item::before {
   content: "";
   position: absolute;
+  left: 22px;
+  top: 24px;
   width: 50px;
   height: 50px;
   background-color: #68b738;
   border-radius: 50%;
-  left: 22px;
-  top: 24px;
 }
 
 .programs__item--slim::after {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-cat-slim.svg");
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 50px;
   top: 22px;
   left: 30px;
+  width: 35px;
+  height: 50px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
 }
 
 .programs__item--pro::after {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-cat-pro.svg");
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 28px;
   top: 35px;
   left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
 }
 
 .programs__heading {
-  text-transform: uppercase;
-  color: $dark;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
   margin-left: 70px;
   margin-top: 0;
   margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $dark;
 }
 
 .programs__text {
-  font-family: $font-text;
   padding-bottom: 23px;
   margin-bottom: 20px;
+  font-family: $font-text;
   border-bottom: 1px solid rgba(#111111, 0.1);
 }
 
 .programs__link {
   position: relative;
-  text-transform: uppercase;
+  padding-right: 35px;
   font-size: 16px;
   line-height: 16px;
-  color: $dark;
   text-decoration: none;
-  padding-right: 35px;
+  text-transform: uppercase;
+  color: $dark;
 }
 
 .programs__link::after {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 12px;
   top: 6px;
   right: 0;
+  width: 25px;
+  height: 12px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
 }

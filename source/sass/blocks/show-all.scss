@@ -7,11 +7,11 @@
 .show-all::after {
   content: "";
   position: absolute;
+  top: 26px;
+  left: 156px;
   width: 2px;
   height: 30px;
   background-color: #d3d3d3;
-  top: 26px;
-  left: 156px;
 }
 
 .show-all::after {
@@ -19,21 +19,21 @@
 }
 
 .show-all__title {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   margin: 0;
   margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .show-all__subtitle {
-  text-align: center;
-  font-family: $font-text;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 21px;
+  font-family: $font-text;
+  text-align: center;
 }
 
 .show-all__link {

@@ -14,8 +14,8 @@
 
 .catalog__item {
   padding: 0 20px;
-  border-bottom: 1px solid #e6e6e6;
   padding-bottom: 22px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .catalog__card {
@@ -31,23 +31,23 @@
 }
 
 .catalog__heading {
-  text-transform: uppercase;
+  width: 80px;
   margin: 0;
   margin-top: 23px;
   margin-bottom: 10px;
-  width: 80px;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
   color: $dark;
 }
 
 .catalog__table {
-  border-collapse: collapse;
   width: 100%;
-  font-family: $font-text;
   font-size: 12px;
   line-height: 16px;
+  font-family: $font-text;
+  border-collapse: collapse;
 }
 
 .catalog__label {
