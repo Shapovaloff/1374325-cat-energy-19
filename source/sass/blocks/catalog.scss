@@ -1,0 +1,60 @@
+.catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  padding: 21px 20px;
+}
+
+.catalog__list {
+  @include reset-list();
+  border-top: 1px solid #e6e6e6;
+}
+
+.catalog__item {
+  padding: 0 20px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 22px;
+}
+
+.catalog__card {
+  display: flex;
+}
+
+.catalog__link-img {
+  width: 140px;
+}
+
+.catalog__info {
+  width: 140px;
+}
+
+.catalog__heading {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 10px;
+  width: 80px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark;
+}
+
+.catalog__table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: $font-text;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__label {
+  text-align: left;
+}
+
+.catalog__volume {
+  text-align: right;
+}
+
