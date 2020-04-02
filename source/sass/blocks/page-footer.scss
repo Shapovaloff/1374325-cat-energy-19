@@ -1,0 +1,16 @@
+.page-footer__info {
+  background-color: $grey;
+}
+
+.page-footer__wrapper {
+  @include container-mobile();
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 22px;
+}
+
+.page-footer__logo {
+  margin-bottom: 27px;
+  text-align: center;
+}

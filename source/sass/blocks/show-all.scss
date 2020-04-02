@@ -1,0 +1,42 @@
+.show-all {
+  position: relative;
+  padding-top: 78px;
+}
+
+.show-all::before,
+.show-all::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 156px;
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+}
+
+.show-all::after {
+  transform: rotate(90deg);
+}
+
+.show-all__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.show-all__subtitle {
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-text;
+  text-align: center;
+}
+
+.show-all__link {
+  color: $grey-dark;
+  background-color: $grey;
+}

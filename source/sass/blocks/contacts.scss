@@ -1,0 +1,20 @@
+.contacts__info {
+  @include container-mobile();
+  display: flex;
+  justify-content: space-between;
+  padding-top: 29px;
+  padding-bottom: 19px;
+}
+
+.contacts__title {
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-main;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  width: 140px;
+}
