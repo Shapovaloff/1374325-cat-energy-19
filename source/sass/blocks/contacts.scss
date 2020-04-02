@@ -2,11 +2,12 @@
   @include container-mobile();
   display: flex;
   justify-content: space-between;
-  padding-top: 29px;
-  padding-bottom: 19px;
+  padding-top: 28px;
+  padding-bottom: 24px;
 }
 
 .contacts__title {
+  margin: 0;
   width: 140px;
   font-size: 16px;
   line-height: 20px;
@@ -17,4 +18,14 @@
 
 .contacts__address {
   width: 140px;
+  margin: 0;
+  line-height: 20px;
+  font-family: $font-text;
+}
+
+.contacts__map {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  height: 362px;
 }
