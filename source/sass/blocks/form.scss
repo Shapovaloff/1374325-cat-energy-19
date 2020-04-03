@@ -34,7 +34,7 @@
   font-family: $font-main;
   text-transform: uppercase;
   color: $grey-dark;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid rgba(#cdcdcd, 0.5);
   box-sizing: border-box;
 }
@@ -123,7 +123,7 @@
   font-family: $font-main;
   text-transform: uppercase;
   color: $grey-dark;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid rgba(#cdcdcd, 0.5);
   box-sizing: border-box;
   padding-right: 35px;
@@ -187,9 +187,9 @@
   padding-left: 46px;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: $font-main;
   text-transform: uppercase;
-  color: #222;
+  color: #222222;
 }
 
 .form__additionally-label::before {
