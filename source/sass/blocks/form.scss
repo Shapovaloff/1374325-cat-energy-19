@@ -1,0 +1,224 @@
+.form__block {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// info
+
+.form__info-list {
+  @include reset-list();
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 8px;
+}
+
+.form__info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form__info-label {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__info-input {
+  width: 100%;
+  height: 45px;
+  padding: 12px 15px 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-main;
+  text-transform: uppercase;
+  color: $grey-dark;
+  background-color: #fff;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+  box-sizing: border-box;
+}
+
+// program
+
+.form__program-list {
+  @include reset-list();
+  padding: 20px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__program-item {
+  position: relative;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  margin-bottom: 13px;
+}
+
+.form__program-label {
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__program-label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  padding: 8px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.form__program-input:checked + .form__program-label::before {
+  background-color: $accent-color;
+  background-clip: content-box;
+}
+
+// contacts
+
+.form__block--contacts {
+  margin-top: 23px;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.form__contacts--title {
+  margin-bottom: 28px;
+}
+
+.form__contacts-list {
+  @include reset-list();
+}
+
+.form__contacts-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form__contacts-label {
+  flex-shrink: 0;
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__contacts-input {
+  width: 100%;
+  height: 45px;
+  padding: 12px 15px 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-main;
+  text-transform: uppercase;
+  color: $grey-dark;
+  background-color: #fff;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+  box-sizing: border-box;
+  padding-right: 35px;
+}
+
+.form__input--email {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 185px center;
+  background-size: 18px auto;
+}
+
+.form__input--phone {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 170px center;
+  background-size: 21px auto;
+}
+
+// coment
+
+.form__title--coment {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.form__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  min-height: 150px;
+  margin: 0;
+  padding: 13px;
+  font-family: $font-main;
+  color: $grey-dark;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  resize: none;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+// additionally
+
+.form__additionally--title {
+  margin-bottom: 30px;
+}
+
+.form__additionally-list {
+  @include reset-list();
+  margin-bottom: 30px;
+}
+
+.form__additionally-label {
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald","Arial",sans-serif;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.form__additionally-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  padding: 6px 3px 6px 4px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.form__additionally-input:checked + .form__additionally-label::before {
+  background: url("../img/icon-tick.svg") no-repeat center;
+  background-size: 21px auto;
+  background-clip: content-box;
+}
+
+.form__button {
+  margin-bottom: 20px;
+}
+
+.form__required-text {
+  display: block;
+  text-align: center;
+  font-family: $font-text;
+  font-size: 14px;
+  line-height: 16px;
+}
