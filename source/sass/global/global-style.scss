@@ -27,6 +27,16 @@ img {
   overflow: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 .title {
   margin: 0;
   color: $dark;
