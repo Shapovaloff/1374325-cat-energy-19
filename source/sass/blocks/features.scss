@@ -88,7 +88,7 @@
     margin-bottom: 40px;
   }
 
-  .features__item:before {
+  .features__item::before {
     width: 80px;
     height: 80px;
     margin-bottom: 35px;
@@ -127,7 +127,7 @@
 
   .features__wrapper {
     width: 1300px;
-    padding: 75px 40px 0px 40px;
+    padding: 75px 40px 0 40px;
   }
 
   .features__item {

@@ -40,3 +40,54 @@
   color: $grey-dark;
   background-color: $grey;
 }
+
+@media (min-width: $tablet-width) {
+  .show-all {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    background: none;
+    border: 1px solid #cdcdcd;
+    padding-top: 163px;
+    padding-right: 38px;
+    padding-left: 38px;
+    padding-bottom: 40px;
+  }
+
+  .show-all::before,
+  .show-all::after {
+    top: 54px;
+    height: 60px;
+    background-color: #e6e6e6;
+  }
+
+  .show-all__title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .show-all__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .show-all__link {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-all::before,
+  .show-all::after {
+    left: 123px;
+  }
+
+  .show-all__title,
+  .show-all__subtitle {
+    padding: 0;
+  }
+}

@@ -121,6 +121,7 @@
   .programs__link {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 50px;
   }
 
   .programs__item::before {
@@ -142,10 +143,6 @@
     left: 412px;
     width: 268px;
     height: 113px;
-  }
-
-  .programs__link {
-    padding-right: 50px;
   }
 
   .programs__link::after {
