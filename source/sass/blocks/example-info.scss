@@ -1,0 +1,59 @@
+.example-info {
+  @include container-mobile();
+}
+
+.example-info__title {
+  padding-bottom: 22px;
+}
+
+.example-info__text {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: $font-text;
+}
+
+.example-info__list {
+  @include reset-list();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example-info__item {
+  width: 124px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.example-info__value {
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example-info__desc {
+  width: 57px;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $font-text;
+  background-color: $grey;
+}
+
+.example-info_costs {
+  margin: 0;
+  margin-bottom: 35px;
+  line-height: 20px;
+  text-align: center;
+  color: $dark;
+  text-transform: uppercase;
+}

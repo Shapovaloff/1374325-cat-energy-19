@@ -1,0 +1,10 @@
+.program-section {
+  @include container-mobile();
+  padding-top: 21px;
+  padding-bottom: 30px;
+}
+
+.program-section__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
