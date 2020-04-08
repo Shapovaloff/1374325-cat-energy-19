@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .living-example {
-    background-image: linear-gradient(to top,#f2f2f2 461px,#fff 461px);
+    background-image: linear-gradient(to top, #f2f2f2 461px, #ffffff 461px);
   }
 
   .living-example__wrapper {
@@ -32,7 +32,7 @@
     padding-right: 40px;
     padding-left: 40px;
     display: flex;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 55px;
   }
 }
