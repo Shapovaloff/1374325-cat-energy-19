@@ -8,3 +8,35 @@
   text-transform: uppercase;
   margin-bottom: 34px;
 }
+
+@media (min-width: $tablet-width) {
+  .program-section {
+    width: 768px;
+    padding: 70px 30px;
+  }
+
+  .program-section__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+
+  .program-section__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-section {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .program-section__subtitle {
+    padding-left: 0;
+  }
+}
