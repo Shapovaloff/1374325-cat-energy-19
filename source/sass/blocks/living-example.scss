@@ -1,5 +1,38 @@
-.living-example__wrapper {
+.living-example {
   padding-top: 17px;
   padding-bottom: 21px;
   background-color: $grey;
+}
+
+.living-example__wrapper {
+  @include container-mobile();
+}
+
+@media (min-width: $tablet-width) {
+  .living-example {
+    background-image: linear-gradient(to top,#f2f2f2 461px,#fff 461px);
+  }
+
+  .living-example__wrapper {
+    width: 768px;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .living-example__wrapper {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 55px;
+  }
 }
