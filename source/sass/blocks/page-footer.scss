@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer__info {
   background-color: $grey;
 }
 
@@ -13,4 +13,25 @@
 .page-footer__logo {
   margin-bottom: 29px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 768px;
+    padding: 58px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1300px;
+    padding: 60px 40px 50px 40px;
+  }
 }

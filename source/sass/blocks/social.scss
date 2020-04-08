@@ -14,3 +14,10 @@
   width: 56px;
   height: 60px;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    border: none;
+    margin: 0;
+  }
+}

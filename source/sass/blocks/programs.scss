@@ -84,3 +84,179 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .programs__item {
+    padding: 77px 60px 62px 52px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .programs__heading {
+    font-size: 36px;
+    line-height: 37px;
+    width: 372px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .programs__text {
+    width: 372px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 45px;
+    border-bottom: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 50px;
+  }
+
+  .programs__item::before {
+    top: 92px;
+    left: 447px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs__item--slim::after {
+    top: 80px;
+    left: 475px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .programs__item--pro::after {
+    top: 135px;
+    left: 412px;
+    width: 268px;
+    height: 113px;
+  }
+
+  .programs__link::after {
+    top: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .programs__item {
+    padding: 77px 60px 62px 52px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .programs__heading {
+    font-size: 36px;
+    line-height: 37px;
+    width: 372px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .programs__text {
+    width: 372px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 45px;
+    border-bottom: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .programs__item::before {
+    top: 92px;
+    left: 447px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs__item--slim::after {
+    top: 80px;
+    left: 475px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .programs__item--pro::after {
+    top: 135px;
+    left: 412px;
+    width: 268px;
+    height: 113px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 80px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin-bottom: 0;
+    padding: 80px 50px 60px 50px;
+  }
+
+  .programs__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programs__item--slim::after {
+    width: 71px;
+    height: 97px;
+    top: 47px;
+    left: 65px;
+  }
+
+  .programs__item--pro::after {
+    width: 134px;
+    height: 57px;
+    top: 69px;
+    left: 34px;
+  }
+
+  .programs__heading {
+    padding-left: 164px;
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .programs__text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
