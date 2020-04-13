@@ -1,39 +1,54 @@
 .program-section {
-  @include container-mobile();
-  padding-top: 21px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.program-section__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.program-section__title {
+  margin-bottom: 25px;
 }
 
 .program-section__subtitle {
   text-transform: uppercase;
-  margin-bottom: 34px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .program-section {
-    width: 768px;
-    padding: 70px 30px;
+    padding-top: 58px;
+    padding-bottom: 72px;
+  }
+
+  .program-section__wrapper {
+    padding: 0 30px;
   }
 
   .program-section__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .program-section__subtitle {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 35px;
-    margin-bottom: 69px;
+    padding-left: 40px;
+    margin-bottom: 67px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-section {
-    width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-top: 75px;
+  }
+
+  .program-section__wrapper {
+    padding: 0 40px;
   }
 
   .program-section__subtitle {

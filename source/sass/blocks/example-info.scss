@@ -1,9 +1,15 @@
+.example-info {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .example-info__title {
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 }
 
 .example-info__text {
   margin: 0;
+  padding-right: 1px;
   margin-bottom: 27px;
   font-family: $font-text;
 }
@@ -16,16 +22,16 @@
 }
 
 .example-info__item {
-  width: 124px;
-  margin-bottom: 20px;
+  width: calc(50% - 16px);
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .example-info__value {
   margin: 0;
   padding: 0 20px;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   font-size: 24px;
   line-height: 24px;
   color: $dark;
@@ -35,9 +41,9 @@
 }
 
 .example-info__desc {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: -10px;
+  margin: 0 10px;
+  display: inline-block;
+  transform: translateY(-10px);
   padding: 0 15px;
   font-size: 12px;
   line-height: 12px;
@@ -45,7 +51,7 @@
   background-color: $grey;
 }
 
-.example-info_costs {
+.example-info__costs {
   margin: 0;
   margin-bottom: 35px;
   line-height: 20px;
@@ -55,32 +61,47 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example-info__title {
-    margin-bottom: 56px;
-  }
-
-  .example-info__text {
+  .example-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 59px;
+    padding: 0;
+    padding-left: 30px;
     padding-right: 30px;
   }
 
-  .example-info {
+  .example-info__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+
+  .example-info__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 30px;
+    margin-bottom: 54px;
+  }
+
+  .example-info__stats {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 70px;
+    width: 100%;
   }
 
   .example-info__list {
-    width: 366px;
+    width: calc(50% + 12px);
   }
 
   .example-info__item {
-    width: 162px;
+    width: calc(50% - 21px);
   }
 
   .example-info__value {
     font-size: 30px;
     line-height: 37px;
+    padding-bottom: 18px;
   }
 
   .example-info__desc {
@@ -94,49 +115,63 @@
     margin-top: -7px;
   }
 
-  .example-info_costs {
+  .example-info__costs {
     width: 192px;
+    padding-top: 11px;
     text-align: right;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .example-info__sum {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding-top: 30px;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 67px;
     margin-bottom: 0;
-    width: 465px;
+    width: 505px;
   }
 
   .example-info__title {
-    margin-bottom: 142px;
+    margin-bottom: 145px;
     padding-bottom: 0;
   }
 
   .example-info__text {
-    margin-bottom: 85px;
+    margin-bottom: 68px;
+  }
+
+  .example-info__stats {
+    flex-direction: column;
+    width: 366px;
   }
 
   .example-info__list {
-    margin-bottom: 30px;
+    width: auto;
+    margin-bottom: 32px;
   }
 
   .example-info__desc {
     background-color: $grey;
   }
 
-  .example-info_costs {
+  .example-info__costs {
     width: 100%;
     text-align: left;
-    margin-bottom: 0;
+    padding: 0;
   }
 
-  .example-info__expenses {
+  .example-info__sum {
+    display: inline-block;
+    margin-top: 0;
     margin-left: 60px;
   }
 }

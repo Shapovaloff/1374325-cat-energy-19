@@ -1,22 +1,17 @@
 .living-example {
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 21px;
   background-color: $grey;
 }
 
-.living-example__wrapper {
-  @include container-mobile();
-}
-
 @media (min-width: $tablet-width) {
   .living-example {
-    background-image: linear-gradient(to top, #f2f2f2 461px, #ffffff 461px);
+    background-image: linear-gradient(to top, $grey 461px, #ffffff 461px);
+    padding-bottom: 18px;
   }
 
   .living-example__wrapper {
-    width: 768px;
-    padding: 30px;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
   }
 }
@@ -29,10 +24,10 @@
 
   .living-example__wrapper {
     width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
+    margin: 0 auto;
     display: flex;
-    padding-top: 0;
-    padding-bottom: 55px;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 68px;
   }
 }

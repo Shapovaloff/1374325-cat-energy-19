@@ -1,12 +1,17 @@
-.promo__wrapper {
-  @include container-mobile();
-  padding-top: 26px;
-  padding-bottom: 22px;
+.promo {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 23px;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(to top, transparent 197px, $dark-green 197px);
-  background-position: center top;
+    linear-gradient(to top, transparent 156px, #65a93c 156px);
   background-repeat: no-repeat;
+  background-position: center top, center bottom;
+}
+
+.promo__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .promo__title {
@@ -17,7 +22,7 @@
 }
 
 .promo__subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -30,17 +35,18 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    min-height: 840px;
+    text-align: left;
+    padding: 0;
+    background: none;
   }
 
   .promo__wrapper {
     position: relative;
-    width: 768px;
     background: none;
     padding: 0 30px;
-    padding-top: 60px;
-    padding-left: 120px;
-    padding-bottom: 533px;
+    padding-top: 58px;
+    padding-left: 118px;
+    padding-bottom: 530px;
   }
 
   .promo__title {
@@ -49,7 +55,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 41px;
   }
 
   .promo__subtitle {
@@ -58,7 +64,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   .promo__img {
@@ -72,39 +78,33 @@
   }
 
   .promo__button {
+    text-align: left;
     width: auto;
     font-size: 20px;
-    padding: 16px 25px;
+    padding: 17px 27px;
   }
 }
 
+.promo__button-blok {
+  margin-right: auto;
+}
+
 @media (min-width: $desktop-width) {
-  .promo {
-    min-height: 581px;
-  }
-
-  .promo::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 50%;
-    min-height: 696px;
-    top: 0;
-    left: 50%;
-    z-index: -1;
-    background-color: #5eaa2f;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: 696px auto;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-
   .promo__wrapper {
     width: 1300px;
     padding-top: 110px;
     padding-right: 40px;
     padding-left: 120px;
     padding-bottom: 0;
+    min-height: 582px;
+  }
+
+  .promo__title {
+    margin-bottom: 40px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 52px;
   }
 
   .promo__img {
