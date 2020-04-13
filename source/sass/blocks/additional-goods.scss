@@ -1,5 +1,5 @@
 .additional-goods {
- position: relative;
+  position: relative;
 }
 
 .additional-goods::after {
@@ -124,7 +124,7 @@
     line-height: 36px;
     margin-bottom: 80px;
     padding-bottom: 0;
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 37px;
     padding-right: 35px;
   }
@@ -158,7 +158,6 @@
 
   .additional-goods__price {
     width: 95px;
-
   }
 
   .additional-goods__button {
