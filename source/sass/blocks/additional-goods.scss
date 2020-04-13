@@ -84,3 +84,117 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-goods {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .additional-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 75px;
+    padding-bottom: 0;
+  }
+
+  .additional-goods__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding: 28px 37px;
+  }
+
+  .additional-goods__heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-goods__info {
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-goods__volume {
+    width: 60%;
+    text-align: right;
+  }
+
+  .additional-goods__price {
+    width: 40%;
+  }
+
+  .additional-goods__button {
+    margin-top: 8px;
+  }
+
+  .additional-goods__gift {
+    width: 100%;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: top center;
+    flex-direction: row;
+    padding: 65px 90px 70px 90px;
+    min-height: 200px;
+  }
+
+  .additional-goods__gift-text {
+    width: 165px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .additional-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .additional-goods__list {
+    width: 895px;
+  }
+
+  .additional-goods__item {
+    padding: 15px 0;
+    border-right: none;
+    border-left: none;
+  }
+
+  .additional-goods__heading {
+    margin: 0;
+  }
+
+  .additional-goods__info {
+    margin: 0;
+  }
+
+  .additional-goods__button {
+    width: 245px;
+    margin: 0;
+  }
+
+  .additional-goods__gift {
+    width: 245px;
+    padding: 43px;
+    flex-direction: column;
+    min-height: 289px;
+    margin-top: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .additional-goods__gift-text {
+    text-align: center;
+  }
+}
