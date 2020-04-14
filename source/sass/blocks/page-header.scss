@@ -6,7 +6,6 @@
   display: block;
   padding-top: 10px;
   padding-bottom: 15px;
-  padding-left: 20px;
   padding-right: 65px;
   border-bottom: 1px solid $border-color;
 }
@@ -28,9 +27,9 @@
 @media (min-width: $tablet-width) {
   .page-header__container {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 24px 30px 0 30px;
+    padding-top: 24px;
   }
 
   .page-header__logo {
@@ -53,8 +52,6 @@
   .page-header__container {
     position: relative;
     width: 1300px;
-    padding-right: 40px;
-    padding-left: 40px;
     padding-top: 53px;
   }
 

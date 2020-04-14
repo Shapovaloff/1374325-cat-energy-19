@@ -1,5 +1,11 @@
+.catalog__wrapper {
+  padding: 0;
+}
+
 .catalog__title {
-  padding: 15px 20px 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 20px;
 }
 
 .catalog__list {
@@ -65,9 +71,9 @@
 
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
+    padding-top: 58px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 58px;
   }
 
   .catalog__title {
@@ -148,9 +154,9 @@
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
+    padding-top: 75px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-top: 75px;
   }
 
   .catalog__item {
