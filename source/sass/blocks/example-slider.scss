@@ -4,6 +4,7 @@
 }
 
 .example-slider__img {
+  display: block;
   margin-bottom: 15px;
 }
 
@@ -11,13 +12,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 5px;
 }
 
 .example-slider__btn {
-  padding: 15px;
   font: inherit;
   font-size: 16px;
   line-height: 20px;
+  padding: 15px;
   color: $dark;
   border: none;
   text-transform: uppercase;
@@ -25,18 +27,21 @@
 }
 
 .example-slider__range {
+  margin-left: 3px;
+  margin-right: 3px;
   position: relative;
 }
 
 .example-slider__scale {
-  width: 82px;
-  height: 12px;
+  width: 84px;
+  height: 14px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
 }
 
 .example-slider__scale-btn {
+  padding: 0;
   position: absolute;
   width: 35px;
   height: 6px;
@@ -54,17 +59,24 @@
 @media (min-width: $tablet-width) {
   .example-slider {
     width: 690px;
-    margin: 0 auto;
+    padding-top: 3px;
   }
 
   .example-slider__img {
-    width: 690px;
-    height: 517px;
+    margin-bottom: 19px;
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .example-slider__controls {
+    padding-left: 0;
   }
 
   .example-slider__btn {
     font-size: 20px;
     line-height: 20px;
+    padding: 0 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
   }
 
   .example-slider__scale {
@@ -99,5 +111,21 @@
     height: 8px;
     border-radius: 50%;
     background-color: $accent-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-slider {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .example-slider__img {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .example-slider__controls {
+    padding-left: 40px;
   }
 }

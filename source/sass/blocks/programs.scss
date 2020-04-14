@@ -1,5 +1,6 @@
 .programs__wrapper {
-  @include container-mobile();
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .programs__list {
@@ -11,6 +12,10 @@
   margin-bottom: 20px;
   padding: 30px 20px 20px 20px;
   background-color: $grey;
+}
+
+.programs__item:last-child {
+  margin-bottom: 0;
 }
 
 .programs__item::before {
@@ -47,7 +52,7 @@
 }
 
 .programs__heading {
-  margin-left: 70px;
+  margin-left: 71px;
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 24px;
@@ -59,14 +64,14 @@
 
 .programs__text {
   padding-bottom: 23px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   font-family: $font-text;
-  border-bottom: 1px solid rgba(#111111, 0.1);
+  border-bottom: 1px solid rgba($dark, 0.1);
 }
 
 .programs__link {
   position: relative;
-  padding-right: 35px;
+  padding-right: 36px;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
@@ -87,13 +92,12 @@
 
 @media (min-width: $tablet-width) {
   .programs__wrapper {
-    width: 768px;
     padding-right: 30px;
     padding-left: 30px;
   }
 
   .programs__item {
-    padding: 77px 60px 62px 52px;
+    padding: 76px 60px 60px 53px;
     margin-bottom: 30px;
   }
 
@@ -104,114 +108,63 @@
   .programs__heading {
     font-size: 36px;
     line-height: 37px;
-    width: 372px;
+    padding-right: 200px;
     margin: 0;
     margin-bottom: 25px;
   }
 
   .programs__text {
-    width: 372px;
+    padding-bottom: 0;
+    padding-right: 220px;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 56px;
     border-bottom: none;
+  }
+
+  .programs__text--pro {
+    padding-right: 255px;
   }
 
   .programs__link {
     font-size: 20px;
     line-height: 20px;
-    padding-right: 50px;
+    padding-right: 46px;
   }
 
   .programs__item::before {
     top: 92px;
-    left: 447px;
+    left: auto;
+    right: 62px;
     width: 200px;
     height: 200px;
   }
 
   .programs__item--slim::after {
     top: 80px;
-    left: 475px;
+    left: auto;
+    right: 92px;
     width: 141px;
     height: 194px;
   }
 
   .programs__item--pro::after {
+    position: absolute;
     top: 135px;
-    left: 412px;
+    left: auto;
+    right: 28px;
     width: 268px;
     height: 113px;
   }
 
   .programs__link::after {
-    top: 8px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .programs__wrapper {
-    width: 768px;
-    padding: 0 30px;
-  }
-
-  .programs__item {
-    padding: 77px 60px 62px 52px;
-    margin-bottom: 30px;
-  }
-
-  .programs__item:last-child {
-    margin-bottom: 0;
-  }
-
-  .programs__heading {
-    font-size: 36px;
-    line-height: 37px;
-    width: 372px;
-    margin: 0;
-    margin-bottom: 25px;
-  }
-
-  .programs__text {
-    width: 372px;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0;
-    margin-bottom: 45px;
-    border-bottom: none;
-  }
-
-  .programs__link {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .programs__item::before {
-    top: 92px;
-    left: 447px;
-    width: 200px;
-    height: 200px;
-  }
-
-  .programs__item--slim::after {
-    top: 80px;
-    left: 475px;
-    width: 141px;
-    height: 194px;
-  }
-
-  .programs__item--pro::after {
-    top: 135px;
-    left: 412px;
-    width: 268px;
-    height: 113px;
+    top: 9px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
-    width: 1300px;
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 80px;
@@ -225,7 +178,7 @@
   .programs__item {
     width: 570px;
     margin-bottom: 0;
-    padding: 80px 50px 60px 50px;
+    padding: 78px 50px 60px 53px;
   }
 
   .programs__item::before {
@@ -238,25 +191,27 @@
   .programs__item--slim::after {
     width: 71px;
     height: 97px;
-    top: 47px;
-    left: 65px;
+    top: 42px;
+    left: 67px;
   }
 
   .programs__item--pro::after {
     width: 134px;
     height: 57px;
-    top: 69px;
+    top: 70px;
     left: 34px;
   }
 
   .programs__heading {
-    padding-left: 164px;
+    padding-left: 162px;
     width: 100%;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
+    padding-right: 0;
   }
 
   .programs__text {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
+    padding-right: 0;
   }
 }

@@ -1,21 +1,20 @@
-.catalog__wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .catalog__title {
-  padding: 21px 20px;
+  padding: 15px 20px 30px;
 }
 
 .catalog__list {
   @include reset-list();
-  border-top: 1px solid #e6e6e6;
 }
 
 .catalog__item {
-  padding: 0 20px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid #e6e6e6;
+  padding: 0 19px;
+  padding-bottom: 24px;
+  border: 1px solid #e6e6e6;
+  border-top-width: 0;
+}
+
+.catalog__item:first-child {
+  border-top: 1px solid #e6e6e6;
 }
 
 .catalog__card {
@@ -23,18 +22,19 @@
 }
 
 .catalog__link-img {
-  width: 140px;
+  width: 50%;
+  height: 144px;
 }
 
 .catalog__info {
-  width: 140px;
+  width: 50%;
 }
 
 .catalog__heading {
-  width: 80px;
+  padding-right: 60px;
   margin: 0;
-  margin-top: 23px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -50,6 +50,11 @@
   border-collapse: collapse;
 }
 
+.catalog__label,
+.catalog__volume {
+  padding: 0;
+}
+
 .catalog__label {
   text-align: left;
 }
@@ -60,21 +65,19 @@
 
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
-    width: 768px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 70px;
+    padding-top: 58px;
   }
 
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
     padding: 0;
-    margin-bottom: 56px;
+    margin-bottom: 85px;
   }
 
   .catalog__list {
-    border: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -86,6 +89,10 @@
     border: none;
     background-image: linear-gradient(to bottom, transparent 82px, #f2f2f2 82px);
     margin-bottom: 58px;
+  }
+
+  .catalog__item:first-child {
+    border: none;
   }
 
   .catalog__card {
@@ -104,14 +111,15 @@
 
   .catalog__info {
     width: 100%;
-    padding: 38px 38px 30px;
+    padding: 36px 38px 35px;
   }
 
   .catalog__heading {
     width: 100%;
     max-width: 159px;
     margin: 0 auto;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
+    padding-right: 0;
     text-align: center;
     font-size: 20px;
     line-height: 20px;
@@ -128,24 +136,26 @@
 
   .catalog__label,
   .catalog__volume {
-    padding: 8px 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
   }
 
   .catalog__order {
     width: 250px;
-    margin: 0 38px 40px;
+    margin: 0 38px 41px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
-    width: 1300px;
     padding-right: 40px;
     padding-left: 40px;
+    padding-top: 75px;
   }
 
   .catalog__item {
     width: 245px;
+    margin-bottom: 61px;
   }
 
   .catalog__order {

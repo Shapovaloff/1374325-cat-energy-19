@@ -1,14 +1,16 @@
 .show-all {
   position: relative;
-  padding-top: 78px;
+  padding-top: 79px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .show-all::before,
 .show-all::after {
   content: "";
   position: absolute;
-  top: 26px;
-  left: 156px;
+  top: 25px;
   width: 2px;
   height: 30px;
   background-color: #d3d3d3;
@@ -20,20 +22,19 @@
 
 .show-all__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .show-all__subtitle {
+  margin: 0;
   margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   font-family: $font-text;
-  text-align: center;
 }
 
 .show-all__link {
@@ -41,17 +42,25 @@
   background-color: $grey;
 }
 
+.show-all__link:hover,
+.show-all__link:focus {
+  background-color: #ebebeb;
+}
+
+.show-all__link:active {
+  color: rgba($grey-dark, 0.3);
+  background-color: #ebebeb;
+}
+
 @media (min-width: $tablet-width) {
   .show-all {
-    display: flex;
-    flex-direction: column;
     margin-top: 80px;
     background: none;
     border: 1px solid #cdcdcd;
     padding-top: 163px;
     padding-right: 38px;
     padding-left: 38px;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
   }
 
   .show-all::before,
@@ -66,6 +75,8 @@
     line-height: 20px;
     padding-right: 35px;
     padding-left: 35px;
+    text-align: center;
+    margin-bottom: 25px;
   }
 
   .show-all__subtitle {
@@ -73,6 +84,7 @@
     line-height: 20px;
     padding-right: 35px;
     padding-left: 35px;
+    text-align: center;
   }
 
   .show-all__link {
@@ -81,6 +93,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .show-all {
+    padding-bottom: 40px;
+  }
+
   .show-all::before,
   .show-all::after {
     left: 123px;

@@ -1,16 +1,38 @@
 .form__block {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
 }
 
-// info
-
-.form__info-list {
-  @include reset-list();
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 8px;
+.form__block::after {
+  position: absolute;
+  top: 13px;
+  width: 100%;
+  height: 3px;
+  background-color: #68b738;
+  z-index: -1;
 }
+
+.form__title {
+  max-width: 242px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark;
+  background-color: #ffffff;
+  margin-left: -20px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.form__list {
+  @include reset-list();
+  padding: 0 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+// info
 
 .form__info-item {
   display: flex;
@@ -23,28 +45,27 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: block;
+  flex-shrink: 0;
 }
 
 .form__info-input {
   width: 100%;
   height: 45px;
-  padding: 12px 15px 12px;
+  padding: 12px 13px 12px 14px;
   font-size: 16px;
   line-height: 18px;
   font-family: $font-main;
   text-transform: uppercase;
   color: $grey-dark;
-  background-color: #ffffff;
   border: 1px solid rgba(#cdcdcd, 0.5);
-  box-sizing: border-box;
 }
 
 // program
-
-.form__program-list {
-  @include reset-list();
-  padding: 20px 0;
-  border-bottom: 1px solid #ededed;
+.form__list--program {
+  padding-top: 29px;
+  padding-bottom: 20px;
+  border: 1px solid #ededed;
 }
 
 .form__program-item {
@@ -52,7 +73,11 @@
   padding-left: 45px;
   padding-top: 6px;
   padding-bottom: 7px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+}
+
+.form__program-item:last-child {
+  margin: 0;
 }
 
 .form__program-label {
@@ -84,20 +109,16 @@
 // contacts
 
 .form__block--contacts {
-  margin-top: 23px;
+  margin-top: 29px;
 }
 
-.form__title {
-  font-size: 24px;
-  line-height: 24px;
+.form__block--contacts::after {
+  content: "";
 }
 
 .form__contacts--title {
-  margin-bottom: 28px;
-}
-
-.form__contacts-list {
-  @include reset-list();
+  margin-bottom: 33px;
+  padding-left: 40px;
 }
 
 .form__contacts-item {
@@ -108,7 +129,7 @@
 
 .form__contacts-label {
   flex-shrink: 0;
-  margin-right: 15px;
+  margin-right: 10px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -116,7 +137,6 @@
 
 .form__contacts-input {
   width: 100%;
-  height: 45px;
   padding: 12px 15px 12px;
   font-size: 16px;
   line-height: 18px;
@@ -145,9 +165,19 @@
 
 // coment
 
-.form__title--coment {
-  margin-bottom: 30px;
-  display: block;
+.form__block--coment {
+  padding-top: 15px;
+  position: relative;
+}
+
+.form__block--coment::after {
+  content: "";
+  top: 28px;
+}
+
+.form__coment-wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .form__textarea {
@@ -156,7 +186,7 @@
   display: block;
   min-height: 150px;
   margin: 0;
-  padding: 13px;
+  padding: 13px 12px 13px 14px;
   font-family: $font-main;
   color: $grey-dark;
   font-size: 16px;
@@ -164,19 +194,20 @@
   line-height: 18px;
   text-transform: uppercase;
   resize: none;
-  overflow: auto;
-  margin-bottom: 30px;
 }
 
 // additionally
 
-.form__additionally--title {
-  margin-bottom: 30px;
+.form__block--additionally {
+  margin-bottom: 33px;
 }
 
-.form__additionally-list {
-  @include reset-list();
-  margin-bottom: 30px;
+.form__block--additionally::after {
+  content: "";
+}
+
+.form__additionally--title {
+  margin-bottom: 27px;
 }
 
 .form__additionally-label {
@@ -211,8 +242,15 @@
   background-clip: content-box;
 }
 
+.form_submit {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .form__button {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  font: inherit;
+  font-size: 16px;
 }
 
 .form__required-text {
@@ -224,22 +262,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
-    width: 630px;
-    margin: 0 auto;
-  }
-
   .form__title {
     font-size: 36px;
     line-height: 36px;
+    max-width: max-content;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__list {
+    padding-right: 68px;
+    padding-left: 71px;
   }
 
   // info
 
-  .form__info-list {
-    border: none;
-    padding: 0;
-    margin-bottom: 70px;
+  .form__block--info {
+    margin-bottom: 51px;
   }
 
   .form__info-item {
@@ -259,16 +299,23 @@
 
   // program
 
-  .form__program-list {
-    padding: 25px 28px;
-    border: 1px solid #ededed;
-    margin-bottom: 70px;
+  .form__block--program {
+    margin-bottom: 80px;
+    padding-right: 68px;
+    padding-left: 71px;
+  }
+
+  .form__list--program {
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 
   .form__program-item {
-    padding-top: 11px;
-    padding-bottom: 9px;
-    padding-left: 60px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 59px;
+    margin-bottom: 14px;
   }
 
   .form__program-item:last-child {
@@ -288,59 +335,91 @@
 
   // contacts
 
+  .form__block--contacts {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .form__block--contacts::after {
+    top: 22px;
+  }
+
   .form__contacts--title {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .form__contacts-list {
     margin-bottom: 70px;
   }
 
+  .form__contacts-item {
+    margin-bottom: 20px;
+  }
+
   .form__contacts-label {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 19px;
   }
 
   .form__contacts-input {
     font-size: 20px;
     line-height: 20px;
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 
   // coment
 
-  .form__title--coment {
-    margin-bottom: 70px;
+  .form__block--coment {
+    margin-bottom: 64px;
+  }
+
+  .form__block--coment::after {
+    top: 38px;
+  }
+
+  .form__coment-wrapper {
+    margin-top: 76px;
+    padding-right: 70px;
+    padding-left: 70px;
   }
 
   .form__textarea {
     font-size: 20px;
     line-height: 20px;
     min-height: 174px;
-    margin-bottom: 70px;
+    padding-left: 18px;
   }
 
   // additionally
 
-  .form__additionally--title {
-    margin-bottom: 50px;
+  .form__block--additionally {
+    margin-bottom: 39px;
   }
 
-  .form__additionally-list {
+  .form__block--additionally::after {
+    top: 21px;
+  }
+
+  .form__additionally--title {
+    margin-bottom: 41px;
+  }
+
+  .form__list--additionally {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .form__additionally-item {
-    width: 284px;
+    width: 286px;
   }
 
   .form__additionally-label {
     font-size: 20px;
     line-height: 20px;
-    padding-top: 26px;
-    padding-left: 60px;
+    padding-top: 25px;
+    padding-left: 58px;
     padding-bottom: 26px;
   }
 
@@ -355,13 +434,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 37px;
+    padding-right: 70px;
+    padding-left: 70px;
   }
 
   .form__button {
     width: 284px;
-    padding: 16px 27px;
-    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
   }
 
   .form__required-text {
@@ -373,21 +456,39 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form {
-    width: auto;
-    margin: 0;
+  .form__title {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .form__list {
+    padding: 0;
+  }
+
+  .form__wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 48px;
   }
 
   .form__block--info {
     width: 570px;
+    margin: 0;
   }
 
   .form__block--program {
     width: 570px;
+    padding: 0;
+    margin: 0;
   }
+
+  .form__list--program {
+    padding: 25px;
+    padding-left: 27px;
+  }
+
 
   .form__block--contacts {
     width: 100%;
