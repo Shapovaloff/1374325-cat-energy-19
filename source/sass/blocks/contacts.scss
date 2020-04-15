@@ -3,8 +3,6 @@
 }
 
 .contacts__info {
-  padding-right: 19px;
-  padding-left: 19px;
   display: flex;
   justify-content: space-between;
   padding-top: 28px;
@@ -38,7 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__info {
-    padding: 65px 71px 56px;
+    padding: 65px 41px 56px;
   }
 
   .contacts__title {
@@ -73,6 +71,10 @@
     align-items: center;
     justify-content: flex-start;
     background-color: transparent;
+  }
+
+  .contacts .container {
+    padding: 0;
   }
 
   .contacts__info {

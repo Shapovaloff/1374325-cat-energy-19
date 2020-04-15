@@ -3,11 +3,6 @@
   padding-bottom: 32px;
 }
 
-.program-section__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .program-section__title {
   margin-bottom: 25px;
 }
@@ -22,10 +17,6 @@
   .program-section {
     padding-top: 58px;
     padding-bottom: 72px;
-  }
-
-  .program-section__wrapper {
-    padding: 0 30px;
   }
 
   .program-section__title {
@@ -45,13 +36,11 @@
 @media (min-width: $desktop-width) {
   .program-section {
     padding-top: 75px;
-  }
-
-  .program-section__wrapper {
-    padding: 0 40px;
+    padding-bottom: 83px;
   }
 
   .program-section__subtitle {
     padding-left: 0;
+    margin-bottom: 65px;
   }
 }
