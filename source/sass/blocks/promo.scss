@@ -9,6 +9,12 @@
   background-position: center top, center bottom;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .promo {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
 .promo__title {
   margin-bottom: 24px;
   line-height: 36px;

@@ -73,6 +73,12 @@
     background-position: right bottom;
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header--bg::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
   .page-header__logo-img {
     width: 203px;
     height: 60px;

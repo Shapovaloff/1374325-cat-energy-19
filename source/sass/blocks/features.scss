@@ -39,16 +39,40 @@
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .features__item--health::before {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
+}
+
 .features__item--form::before {
   background-image: url("../img/advantage-powder@1x.png");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .features__item--form::before {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 }
 
 .features__item--food::before {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .features__item--food::before {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
+}
+
 .features__item--profit::before {
   background-image: url("../img/advantage-clock@1x.png");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .features__item--profit::before {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 .features__item-text {
