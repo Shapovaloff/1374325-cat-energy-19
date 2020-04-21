@@ -4,14 +4,18 @@
   padding-bottom: 23px;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(to top, transparent 199px, #65a93c 199px);
+    linear-gradient(to bottom, #65a93c 305px, transparent 305px);
+  background-size: auto 305px;
   background-repeat: no-repeat;
-  background-position: center top, center bottom;
+  background-position: center top;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .promo {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-image:
+      url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(to bottom, #65a93c 305px, transparent 305px);
+    background-size: auto 305px;
   }
 }
 
