@@ -1,25 +1,20 @@
 ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', {
+  var myMap = new ymaps.Map("map", {
           center: [59.938635, 30.323118],
-          zoom: 19,
-          behaviors: ['drag']
+          zoom: 17,
+          behaviors: ["drag"]
       }, {
           searchControlProvider: 'yandex#search'
       }),
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(59.938635, 30.323118), {
-          balloonContentHeader: 'Приглашаем к сотрудничеству дилеров!',
-          balloonContentBody: 'г. Санкт-Петербург',
-          balloonContentFooter: 'ул. Большая Конюшенная, д. 19/8',
+          balloonContentHeader: "Приглашаем к сотрудничеству дилеров!",
+          balloonContentBody: "г. Санкт-Петербургб ул. Большая Конюшенная, д. 19/8",
       }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
-          // Своё изображение иконки метки.
           iconImageHref: "img/map-pin.png",
-          // Размеры метки.
-          iconImageSize: [55, 50],
-          iconImageOffset: [-25, -50]
+          iconImageSize: [124, 106],
+          iconImageOffset: [-55, -100]
       });
 
   myMap.geoObjects.add(myPlacemark);

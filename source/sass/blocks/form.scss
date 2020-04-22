@@ -3,6 +3,7 @@
 }
 
 .form__block {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -67,6 +68,10 @@
   outline: none;
 }
 
+.form__input:focus + .form__icon {
+  fill: $accent-color;
+}
+
 // info
 
 .form__block--info {
@@ -129,6 +134,7 @@
 
 .form__block--contacts {
   margin-bottom: 15px;
+  padding-right: 40px;
 }
 
 .form__input--contacts {
@@ -136,18 +142,23 @@
   padding-right: 35px;
 }
 
-.form__input--contacts-email {
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 182px center;
-  background-size: 16px auto;
+.form__icon {
+  position: absolute;
+  fill: #222222;
 }
 
-.form__input--contacts-phone {
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 165px center;
-  background-size: 21px auto;
+.form__icon--email {
+  width: 18px;
+  height: 14px;
+  right: 15px;
+  top: calc(50% - 7px);
+}
+
+.form__icon--phone {
+  width: 21px;
+  height: 21px;
+  right: 13px;
+  top: calc(50% - 10px);
 }
 
 // coment
@@ -323,12 +334,12 @@
     display: none;
   }
 
-  .form__input--contacts-email {
-    background-position: 515px, center;
+  .form__icon--email {
+    right: 20px;
   }
 
-  .form__input--contacts-phone {
-    background-position: 495px center;
+  .form__icon--phone {
+    right: 17px;
   }
 
   // coment

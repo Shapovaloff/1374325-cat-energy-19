@@ -75,21 +75,21 @@
 
   .contacts .container {
     padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
   .contacts__info {
+    position: relative;
     width: 570px;
     margin-left: 40px;
     padding: 61px 88px 60px 76px;
     background-color: #ffffff;
+    z-index: 1;
   }
 
   .contacts__address {
     text-align: left;
-  }
-
-  .contacts__map {
-    position: absolute;
-    z-index: -1;
   }
 }
