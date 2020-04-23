@@ -118,13 +118,21 @@
           <section class="example-slider">
             <h3 class="visually-hidden">Фото пример</h3>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="example-slider__img example-slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот Борис до">
             </picture>
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablett@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="example-slider__img example-slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот Борис после">
             </picture>
             <div class="example-slider__controls">
@@ -184,7 +192,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
