@@ -2,12 +2,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: block;
   width: 65px;
   height: 65px;
   padding: 0;
   border: 0;
-  cursor: pointer;
   background-color: transparent;
 }
 
@@ -30,8 +28,8 @@
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 32px;
-  right: 22px;
+  top: 30px;
+  right: 20px;
   width: 24px;
   height: 2px;
   background-color: #000000;

@@ -13,13 +13,14 @@
   background-color: $accent-color;
   border: 0;
   box-sizing: border-box;
-}
+  cursor: pointer;
 
-.button:hover,
-.button:focus {
-  background-color: #5eaa2f;
-}
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
 
-.button:active {
-  color: rgba(#ffffff, 0.3);
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

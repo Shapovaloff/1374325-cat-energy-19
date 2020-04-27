@@ -1,5 +1,5 @@
-.contacts--grey {
-  background-color: $grey;
+.contacts--index {
+  background-color: #ffffff;
 }
 
 .contacts__info {
@@ -10,8 +10,8 @@
 }
 
 .contacts__title {
-  margin: 0;
   width: 50%;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-family: $font-main;
@@ -28,21 +28,51 @@
 }
 
 .contacts__map {
-  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__map-interactive {
+  z-index: 1;
+  position: absolute;
+  left: 0;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+}
+
+.contacts__map-container {
+  position: relative;
+  width: 320px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 30px);
+    width: 62px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts__map-image {
+  display: block;
+  width: 320px;
   height: 362px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__info {
-    padding: 65px 41px 56px;
+    padding: 63px 41px 58px;
   }
 
   .contacts__title {
     font-size: 20px;
     line-height: 25px;
-    width: 154px;
+    width: 155px;
   }
 
   .contacts__address {
@@ -57,8 +87,23 @@
     display: block;
   }
 
-  .contacts__map {
-    width: 100%;
+  .contacts__map-interactive {
+    height: 400px;
+  }
+
+  .contacts__map-container {
+    width: 767px;
+
+    &::before {
+      top: calc(50% - 57px);
+      left: calc(50% - 61px);
+      width: 124px;
+      height: 106px;
+    }
+  }
+
+  .contacts__map-image {
+    width: 767px;
     height: 400px;
   }
 }
@@ -66,30 +111,39 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: transparent;
-  }
-
-  .contacts .container {
-    padding: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
   }
 
   .contacts__info {
-    position: relative;
+    position: absolute;
+    top: calc(50% - 100px);
     width: 570px;
-    margin-left: 40px;
-    padding: 61px 88px 60px 76px;
+    padding: 60px 90px 60px 76px;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 2;
   }
 
   .contacts__address {
     text-align: left;
+  }
+
+  .contacts__map {
+    overflow: hidden;
+  }
+
+  .contacts__map-container {
+    width: 1440px;
+
+    &::before {
+      top: calc(50% - 50px);
+      left: 998px;
+      width: 124px;
+      height: 106px;
+    }
+  }
+
+  .contacts__map-image {
+    max-width: initial;
+    width: 1440px;
+    height: 400px;
   }
 }

@@ -1,33 +1,31 @@
 .living-example {
-  padding-top: 18px;
-  padding-bottom: 21px;
   background-color: $grey;
+}
+
+.living-example__wrapper {
+  padding-top: 18px;
+  padding-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
   .living-example {
     background-image: linear-gradient(to top, $grey 461px, #ffffff 461px);
-    padding-bottom: 28px;
   }
 
   .living-example__wrapper {
-    padding-top: 25px;
-    padding-bottom: 50px;
+    padding-top: 42px;
+    padding-bottom: 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .living-example {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .living-example__wrapper {
-    width: 1300px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    padding-bottom: 68px;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-bottom: 40px;
   }
 }

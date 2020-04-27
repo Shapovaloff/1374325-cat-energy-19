@@ -1,5 +1,5 @@
 .program-section {
-  padding-top: 16px;
+  padding-top: 15px;
   padding-bottom: 32px;
 }
 
@@ -8,20 +8,18 @@
 }
 
 .program-section__subtitle {
-  text-transform: uppercase;
   margin: 0;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .program-section {
     padding-top: 58px;
-    padding-bottom: 72px;
+    padding-bottom: 73px;
   }
 
   .program-section__title {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 55px;
   }
 
@@ -36,11 +34,10 @@
 @media (min-width: $desktop-width) {
   .program-section {
     padding-top: 75px;
-    padding-bottom: 83px;
+    padding-bottom: 82px;
   }
 
   .program-section__subtitle {
     padding-left: 0;
-    margin-bottom: 65px;
   }
 }
