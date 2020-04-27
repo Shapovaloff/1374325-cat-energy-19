@@ -1,28 +1,29 @@
 .show-all {
   position: relative;
-  padding-top: 79px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  padding-top: 79px;
+  text-align: center;
 
-.show-all::before,
-.show-all::after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  width: 2px;
-  height: 30px;
-  background-color: #d3d3d3;
-}
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+  }
 
-.show-all::after {
-  transform: rotate(90deg);
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .show-all__title {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -40,51 +41,46 @@
 .show-all__link {
   color: $grey-dark;
   background-color: $grey;
-}
 
-.show-all__link:hover,
-.show-all__link:focus {
-  background-color: #ebebeb;
-}
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
 
-.show-all__link:active {
-  color: rgba($grey-dark, 0.3);
-  background-color: #ebebeb;
+  &:active {
+    color: rgba($grey-dark, 0.3);
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .show-all {
     margin-top: 80px;
+    padding: 163px 37px 40px 38px;
     background: none;
     border: 1px solid #cdcdcd;
-    padding-top: 163px;
-    padding-right: 38px;
-    padding-left: 38px;
-    padding-bottom: 38px;
-  }
 
-  .show-all::before,
-  .show-all::after {
-    top: 54px;
-    height: 60px;
-    background-color: #e6e6e6;
+    &::before,
+    &::after {
+      top: 54px;
+      height: 60px;
+      background-color: #e6e6e6;
+    }
   }
 
   .show-all__title {
-    font-size: 20px;
-    line-height: 20px;
+    margin-bottom: 25px;
     padding-right: 35px;
     padding-left: 35px;
-    text-align: center;
-    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .show-all__subtitle {
-    font-size: 16px;
-    line-height: 20px;
     padding-right: 35px;
     padding-left: 35px;
-    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .show-all__link {
@@ -93,15 +89,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .show-all {
-    padding-bottom: 40px;
-  }
-
-  .show-all::before,
-  .show-all::after {
-    left: 123px;
-  }
-
   .show-all__title,
   .show-all__subtitle {
     padding: 0;

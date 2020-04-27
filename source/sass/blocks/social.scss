@@ -2,11 +2,11 @@
   @include reset-list();
   display: flex;
   justify-content: center;
-  margin-bottom: 17px;
-  border-top: 1px solid rgba(#000000, 0.1);
-  border-bottom: 1px solid rgba(#000000, 0.1);
+  margin-bottom: 20px;
   padding-top: 17px;
   padding-bottom: 15px;
+  border-top: 1px solid rgba(#000000, 0.1);
+  border-bottom: 1px solid rgba(#000000, 0.1);
 }
 
 .social__item {
@@ -20,19 +20,19 @@
   justify-content: center;
   width: 30px;
   height: 30px;
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
   fill: #666666;
-}
-
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-  fill: $accent-color;
-}
-
-.social__link:active {
-  opacity: 0.3;
 }
 
 .social__icon--vkontakte {
@@ -53,9 +53,9 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    border: none;
     margin: 0;
     padding: 0;
+    border: none;
   }
 
   .social__icon--vkontakte {

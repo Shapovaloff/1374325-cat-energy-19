@@ -7,10 +7,15 @@
   font-family: $font-text;
   text-decoration: none;
   color: $grey-dark;
-}
 
-.copyright__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: $accent-color;
+  }
 }
 
 .copyright__text {
@@ -21,13 +26,12 @@
   fill: #666666;
 }
 
-.copyright__link:hover .copyright__icon,
-.copyright__link:focus .copyright__icon {
-  fill: $accent-color;
-}
-
 @media (min-width: $tablet-width) {
   .copyright__link {
-    width: 162px;
+    width: 164px;
+  }
+
+  .copyright__text {
+    padding-bottom: 5px;
   }
 }

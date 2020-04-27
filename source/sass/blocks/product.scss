@@ -1,0 +1,156 @@
+.product {
+  @include reset-list();
+}
+
+.product__item {
+  padding: 0 19px;
+  padding-bottom: 24px;
+  border: 1px solid #e6e6e6;
+
+  &:not(:last-child) {
+    border-bottom-width: 0;
+  }
+}
+
+.product__card {
+  display: flex;
+  flex-direction: row;
+}
+
+.product__link-img {
+  width: 50%;
+}
+
+.product__img {
+  display: block;
+  width: 140px;
+  height: 144px;
+}
+
+.product__info {
+  width: 50%;
+  margin-top: 21px;
+}
+
+.product__heading {
+  margin: 0;
+  margin-bottom: 13px;
+  padding-right: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.product__table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-text;
+  border-collapse: collapse;
+}
+
+.product__label,
+.product__volume {
+  padding: 0;
+}
+
+.product__label {
+  text-align: left;
+}
+
+.product__volume {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product__item {
+    width: 324px;
+    margin-bottom: 58px;
+    padding: 0;
+    background-image: linear-gradient(to bottom, transparent 82px, #f2f2f2 82px);
+    border: none;
+  }
+
+  .product__card {
+    flex-direction: column;
+  }
+
+  .product__link-img {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 208px;
+  }
+
+  .product__img {
+    width: 324px;
+    height: auto;
+  }
+
+  .product__info {
+    width: 100%;
+    margin: 0;
+    padding: 36px 38px 31px;
+  }
+
+  .product__heading {
+    margin-bottom: 19px;
+    padding-right: 58px;
+    padding-left: 58px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .product__table {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .product__descr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__label,
+  .product__volume {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .product__order {
+    width: 250px;
+    margin: 0 38px 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__item {
+    width: 245px;
+    margin-bottom: 61px;
+  }
+
+  .product__heading {
+    padding-right: 19px;
+    padding-left: 19px;
+  }
+
+  .product__img {
+    width: 245px;
+    height: auto;
+  }
+
+  .product__order {
+    width: 170px;
+  }
+}

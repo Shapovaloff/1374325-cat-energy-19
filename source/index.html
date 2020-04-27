@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
-    <header class="page-header page-header--bg">
+    <header class="page-header page-header--index">
       <div class="page-header__container container">
         <a class="page-header__logo">
           <picture>
@@ -40,9 +43,9 @@
       <section class="promo">
         <div class="promo__wrapper container">
           <h2 class="promo__title title">Функциональное питание для котов</h2>
-          <p class="promo__subtitle subtitle">Занялся собой? Займись котом!</p>
+          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
@@ -59,11 +62,9 @@
         <div class="programs__wrapper container">
           <ul class="programs__list">
             <li class="programs__item programs__item--slim">
-              <div class="programs__inner">
-                <h3 class="programs__heading">Похудение</h3>
-                <p class="programs__text programs__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="programs__link" href="catalog.html">Каталог Slim</a>
-              </div>
+              <h3 class="programs__heading">Похудение</h3>
+              <p class="programs__text programs__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="programs__link" href="catalog.html">Каталог Slim</a>
             </li>
             <li class="programs__item programs__item--pro">
               <h3 class="programs__heading">Набор массы</h3>
@@ -115,26 +116,28 @@
             </div>
           </section>
 
-          <section class="example-slider">
+          <section class="example-slider container">
             <h3 class="visually-hidden">Фото пример</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <div class="examlie-slider__block-img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example-slider__img example-slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот Борис до">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablett@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example-slider__img example-slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис до">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablett@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="example-slider__img example-slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот Борис после">
-            </picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example-slider__img example-slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис после">
+              </picture>
+            </div>
             <div class="example-slider__controls">
               <button class="example-slider__btn example-slider__btn--before">Было</button>
               <div class="example-slider__range">
@@ -147,7 +150,11 @@
         </div>
       </section>
 
-      <section class="contacts">
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="contacts contacts--index">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="container">
           <div class="contacts__info">
@@ -155,12 +162,22 @@
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
           </div>
         </div>
-        <div class="contacts__map" id="map"></div>
+        <div class="contacts__map">
+          <div class="contacts__map-interactive" id="map"></div>
+          <div class="contacts__map-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </div>
+        </div>
       </section>
 
-    </main>
-
-    <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="#">
           <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
@@ -170,7 +187,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social__icon social__icon--vkontakte" width="30" height="12">
-                <use xlink:href="img/sprite.svg#vkontakte"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -178,7 +195,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg class="social__icon social__icon--instagram" width="16" height="16">
-                <use xlink:href="img/sprite.svg#instagram"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -186,7 +203,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <svg class="social__icon social__icon--facebook" width="10" height="19">
-                <use xlink:href="img/sprite.svg#facebook"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -195,7 +212,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -206,7 +223,7 @@
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
 
   </body>

@@ -1,9 +1,9 @@
 .example-info__title {
-  padding-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .example-info__text {
-  margin: 0;
+  margin-top: 0;
   padding-right: 1px;
   margin-bottom: 27px;
   font-family: $font-text;
@@ -14,19 +14,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 9px;
 }
 
 .example-info__item {
   width: calc(50% - 16px);
-  margin-bottom: 10px;
   text-align: center;
 }
 
 .example-info__value {
   margin: 0;
-  padding: 0 20px;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding: 12px 20px 17px 20px;
   font-size: 24px;
   line-height: 24px;
   color: $dark;
@@ -36,7 +34,7 @@
 }
 
 .example-info__desc {
-  margin: 0 10px;
+  margin: 0 18px;
   display: inline-block;
   transform: translateY(-10px);
   padding: 0 15px;
@@ -48,7 +46,7 @@
 
 .example-info__costs {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   line-height: 20px;
   text-align: center;
   color: $dark;
@@ -56,17 +54,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 59px;
-  }
-
   .example-info__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 41px;
+    margin-bottom: 64px;
   }
 
   .example-info__text {
@@ -93,7 +82,8 @@
   .example-info__value {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 18px;
+    padding-top: 13px;
+    padding-bottom: 20px;
   }
 
   .example-info__desc {
@@ -101,23 +91,22 @@
     margin-right: 7px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
-    margin-top: -7px;
+    background-color: #ffffff;
+    transform: translateY(-12px);
   }
 
   .example-info__costs {
-    width: 192px;
-    padding-top: 11px;
+    width: calc(50% - 12px);
+    padding-top: 10px;
     text-align: right;
-    margin: 0;
     font-size: 20px;
     line-height: 20px;
   }
 
   .example-info__sum {
-    display: inline-block;
+    display: block;
     margin-top: 10px;
   }
 }
@@ -126,14 +115,12 @@
   .example-info {
     padding: 0;
     margin: 0;
-    padding-left: 40px;
-    padding-top: 67px;
-    margin-bottom: 0;
-    width: 505px;
+    padding-top: 56px;
+    width: 465px;
   }
 
   .example-info__title {
-    margin-bottom: 145px;
+    margin-bottom: 146px;
     padding-bottom: 0;
   }
 
@@ -148,7 +135,7 @@
 
   .example-info__list {
     width: auto;
-    margin-bottom: 32px;
+    margin-bottom: 42px;
   }
 
   .example-info__desc {
@@ -164,6 +151,6 @@
   .example-info__sum {
     display: inline-block;
     margin-top: 0;
-    margin-left: 60px;
+    margin-left: 59px;
   }
 }

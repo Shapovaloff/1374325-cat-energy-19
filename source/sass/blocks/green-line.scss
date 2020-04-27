@@ -1,17 +1,17 @@
 .green-line {
   position: relative;
-}
 
-.green-line::after {
-  position: absolute;
-  content: "";
-  top: 13px;
-  width: 65%;
-  display: block;
-  height: 3px;
-  right: 0;
-  background-color: $accent-color;
-  z-index: -1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 65%;
+    display: block;
+    height: 3px;
+    right: 0;
+    background-color: $accent-color;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
