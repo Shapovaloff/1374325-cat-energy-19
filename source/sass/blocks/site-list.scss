@@ -13,15 +13,15 @@
   text-decoration: none;
   color: $dark;
   border-bottom: 1px solid $border-color;
+}
 
-  &[href]:hover,
-  &[href]:focus {
-    opacity: 0.6;
-  }
+.site-list__link[href]:hover,
+.site-list__link[href]:focus {
+  opacity: 0.6;
+}
 
-  &[href]:active {
-    opacity: 0.3;
-  }
+.site-list__link[href]:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

@@ -75,12 +75,36 @@
   }
 }
 
+.form--required {
+  border: 1px solid #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
+
+  &:hover {
+    border: 1px solid #ff8282;
+    box-shadow: inset 0 0 0 1px #ff8282;
+  }
+
+  &:focus {
+    border: 1px solid #ff8282;
+    box-shadow: inset 0 0 0 1px #ff8282;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  fill: #222222;
+}
+
 .form__input:focus + .form__icon {
   fill: $accent-color;
 }
 
-input[type="number"] {
-  appearance: textfield;
+.form--required + .form__icon {
+  fill: #ff8282;
+}
+
+.form--required:focus + .form__icon {
+  fill: #ff8282;
 }
 
 // info
@@ -143,17 +167,16 @@ input[type="number"] {
 }
 // contacts
 
+.form__title--contacts {
+  width: 202px;
+}
+
 .form__label--contacts {
   margin-right: 10px;
 }
 
 .form__input--contacts {
   padding-right: 35px;
-}
-
-.form__icon {
-  position: absolute;
-  fill: #222222;
 }
 
 .form__icon--email {
@@ -267,8 +290,8 @@ input[type="number"] {
   }
 
   .form__list {
-    padding-right: 38px;
-    padding-left: 41px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .form__item {
@@ -327,8 +350,8 @@ input[type="number"] {
     margin-bottom: 66px;
   }
 
-  .form__title--contacts br {
-    display: none;
+  .form__title--contacts {
+    width: auto;
   }
 
   .form__list--contacts {
@@ -387,7 +410,7 @@ input[type="number"] {
   }
 
   .form__item--additionally {
-    width: 286px;
+    width: calc(50% - 30px);
     margin-top: 16px;
     margin-bottom: 16px;
 
@@ -407,7 +430,7 @@ input[type="number"] {
     }
   }
 
-  .form_submit {
+  .form__submit {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -416,7 +439,7 @@ input[type="number"] {
   }
 
   .form__button {
-    width: 284px;
+    width: calc(50% - 31px);
     margin-bottom: 0;
     padding-top: 14px;
     padding-left: 16px;
@@ -426,7 +449,7 @@ input[type="number"] {
   }
 
   .form__required-text {
-    width: 284px;
+    width: calc(50% - 30px);
     margin-bottom: 5px;
     text-align: left;
     font-size: 16px;
@@ -508,7 +531,7 @@ input[type="number"] {
     width: 245px;
   }
 
-  .form_submit {
+  .form__submit {
     padding: 0;
   }
 

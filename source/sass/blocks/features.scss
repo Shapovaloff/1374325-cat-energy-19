@@ -101,7 +101,7 @@
 
   .features__item {
     display: block;
-    width: 324px;
+    width: calc(50% - 30px);
     min-height: 230px;
     counter-increment: number;
     margin-top: 43px;

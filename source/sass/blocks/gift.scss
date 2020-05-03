@@ -40,7 +40,7 @@
     flex-direction: row;
     padding: 59px 120px 68px 91px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    background-position: top center;
+    background-position: center center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
