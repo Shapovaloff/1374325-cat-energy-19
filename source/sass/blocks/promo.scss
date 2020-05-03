@@ -1,9 +1,10 @@
 .promo {
   position: static;
+  // width: 100%;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(to bottom, #65a93c 305px, transparent 305px);
-  background-size: auto 305px;
+  background-size: auto 305px, 100% auto;
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -22,6 +23,9 @@
 }
 
 .promo__title {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 25px;
   line-height: 36px;
   text-align: center;
@@ -59,10 +63,12 @@
   }
 
   .promo__title {
+    margin: 0;
     margin-bottom: 41px;
     text-align: left;
     line-height: 60px;
     color: $dark;
+    width: 420px;
   }
 
   .promo__subtitle {

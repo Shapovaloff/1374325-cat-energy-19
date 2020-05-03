@@ -9,15 +9,17 @@
 .example-slider__img {
   display: block;
   margin: 0 auto;
-  width: 320px;
-  height: 240px;
+  width: 100%;
+  height: auto;
 }
 
 .example-slider__controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5px;
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example-slider__btn {
@@ -36,10 +38,11 @@
   margin-left: 18px;
   margin-right: 18px;
   position: relative;
+  width: 30%;
 }
 
 .example-slider__scale {
-  width: 84px;
+  width: 100%;
   height: 14px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
@@ -49,7 +52,7 @@
 .example-slider__scale-btn {
   padding: 0;
   position: absolute;
-  width: 35px;
+  width: calc(50% - 7px);
   height: 6px;
   top: 4px;
   left: 6px;
@@ -68,6 +71,10 @@
     padding-top: 60px;
   }
 
+  .example-slider__controls {
+    margin-left: 0;
+  }
+
   .examlie-slider__block-img {
     margin-left: 15px;
     margin-bottom: 17px;
@@ -76,10 +83,6 @@
   .example-slider__img {
     width: 690px;
     height: 517px;
-  }
-
-  .example-slider__controls {
-    padding-left: 0;
   }
 
   .example-slider__btn {
@@ -100,12 +103,13 @@
   }
 
   .example-slider__range {
+    width: 59%;
     margin-left: 22px;
     margin-right: 22px;
   }
 
   .example-slider__scale {
-    width: 428px;
+    width: 100%;
     height: 6px;
     border: none;
     background-color: #dcdcdc;
@@ -158,12 +162,17 @@
     margin-bottom: 39px;
   }
 
+  .example-slider__range {
+    width: 66%;
+  }
+
   .example-slider__btn {
     padding-top: 1px;
     padding-bottom: 6px;
   }
 
   .example-slider__controls {
+    padding: 0;
     padding-left: 40px;
   }
 }

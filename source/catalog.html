@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -362,15 +364,17 @@
 
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
           </div>
         </div>
       </section>
 
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo" href="#">
-          <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+        <a class="page-footer__logo" href="#" aria-label="Логотип Cat Energy">
+          <svg class="page-footer__logo-icon" width="128" height="24">
+            <use xlink:href="#icon-logo-footer"></use>
+          </svg>
         </a>
         <ul class="page-footer__social social__list">
           <li class="social__item">
@@ -399,7 +403,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">
+          <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
             <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
@@ -413,8 +417,8 @@
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss&callback=mapFunction"></script>
+    <script src="js/map-google.js"></script>
 
   </body>
 </html>

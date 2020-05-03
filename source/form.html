@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -51,11 +53,11 @@
               <ul class="form__list form__list--info">
                 <li class="form__item">
                   <label class="form__label form__label--info form__label--info-name" for="info__name">Имя:*</label>
-                  <input class="form__input form__input--info" type="text" name="name" id="info__name" placeholder="Барсик" required="">
+                  <input class="form__input form__input--info" type="text" name="name" id="info__name" placeholder="Барсик">
                 </li>
                 <li class="form__item">
                   <label class="form__label form__label--info form__label--info-weight" for="info__weight">Вес (кг):*</label>
-                  <input class="form__input form__input--info" type="number" name="weight" id="info__weight" placeholder="7" required="">
+                  <input class="form__input form__input--info" type="number" name="weight" id="info__weight" placeholder="7">
                 </li>
                 <li class="form__item">
                   <label class="form__label form__label--info form__label--info-age" for="info__age">Возраст (лет):</label>
@@ -68,7 +70,7 @@
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="form__list form__list--program">
                 <li class="form__item form__item--program">
-                  <input class="form__input-program visually-hidden" type="radio" name="program" value="slimming" id="program__slimming" checked="">
+                  <input class="form__input-program visually-hidden" type="radio" name="program" value="slimming" id="program__slimming" checked>
                   <label class="form__label form__label--program" for="program__slimming">Похудение</label>
                 </li>
                 <li class="form__item form__item--program">
@@ -85,18 +87,18 @@
 
           <fieldset class="form__block form__block--contacts green-line">
             <div class="container">
-              <h3 class="form__title form__title--contacts">Контактные данные<br> (владельца кота)</h3>
+              <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
               <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--contacts">
                   <label class="form__label form__label--contacts form__label--contacts-email" for="contacts__email">E-mail:*</label>
-                  <input class="form__input form__input--contacts" type="email" name="email" id="contacts__email" placeholder="kuklachev@gmail.com" required="">
+                  <input class="form__input form__input--contacts" type="email" name="email" id="contacts__email" placeholder="kuklachev@gmail.com">
                   <svg class="form__icon form__icon--email" width="18" height="14">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </li>
                 <li class="form__item form__item--contacts">
                   <label class="form__label form__label--contacts form__label--contacts-phone" for="contacts__phone">Телефон:*</label>
-                  <input class="form__input form__input--contacts" type="tel" name="phone" id="contacts__phone" placeholder="8 (960) 900-60-90" required="">
+                  <input class="form__input form__input--contacts" type="tel" name="phone" id="contacts__phone" placeholder="8 (960) 900-60-90">
                   <svg class="form__icon form__icon--phone" width="21" height="21">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
@@ -107,7 +109,7 @@
 
           <div class="form__block form__block--coment green-line">
             <div class="container">
-              <h3 class="form__title form__title--coment">Комментарий</h3>
+              <label for="coment__tell" class="form__title form__title--coment">Комментарий</label>
               <div class="form__coment-wrapper">
                 <textarea class="form__textarea" name="coment" id="coment__tell" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
@@ -119,7 +121,7 @@
               <h3 class="form__title form__title--additionally">Дополнительно</h3>
               <ul class="form__list form__list--additionally">
                 <li class="form__item form__item--additionally">
-                  <input class="form__input-additionally visually-hidden" type="checkbox" name="additionally" value="sweetener" id="additionally__sweetener" checked="">
+                  <input class="form__input-additionally visually-hidden" type="checkbox" name="additionally" value="sweetener" id="additionally__sweetener" checked>
                   <label class="form__label form__label--additionally" for="additionally__sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="form__item form__item--additionally">
@@ -138,7 +140,7 @@
             </div>
           </fieldset>
           <div class="container">
-            <div class="form_submit">
+            <div class="form__submit">
               <button type="submit" class="form__button button">Отправить заявку</button>
               <small class="form__required-text">* — Обязательные поля</small>
             </div>
@@ -168,15 +170,17 @@
 
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
           </div>
         </div>
       </section>
 
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo" href="#">
-          <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+        <a class="page-footer__logo" href="#" aria-label="Логотип Cat Energy">
+          <svg class="page-footer__logo-icon" width="128" height="24">
+            <use xlink:href="#icon-logo-footer"></use>
+          </svg>
         </a>
         <ul class="page-footer__social social__list">
           <li class="social__item">
@@ -205,7 +209,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">
+          <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
             <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
@@ -219,8 +223,9 @@
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss&callback=mapFunction"></script>
+    <script src="js/map-google.js"></script>
+    <script src="js/form.js"></script>
 
   </body>
 </html>
