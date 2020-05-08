@@ -1,9 +1,9 @@
 .promo {
   position: static;
-  // width: 100%;
+  background-color: #5eaa2f;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(to bottom, #65a93c 305px, transparent 305px);
+    linear-gradient(to top, #ffffff 198px, transparent 198px);
   background-size: auto 305px, 100% auto;
   background-repeat: no-repeat;
   background-position: center top;
@@ -11,7 +11,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
       url("../img/index-background-mobile@2x.jpg"),
-      linear-gradient(to bottom, #65a93c 305px, transparent 305px);
+      linear-gradient(to top, #ffffff 198px, transparent 198px);
   }
 }
 
@@ -58,7 +58,7 @@
   }
 
   .promo__wrapper {
-    padding: 58px 192px 530px 118px;
+    padding: 58px 192px 529px 118px;
     text-align: left;
   }
 
@@ -77,6 +77,7 @@
     font-size: 20px;
     line-height: 20px;
     color: $dark;
+    width: 420px;
   }
 
   .promo__img {
@@ -90,8 +91,9 @@
 
   .promo__button {
     width: auto;
-    padding: 17px 27px;
+    padding: 15px 27px 17px 27px;
     font-size: 20px;
+    line-height: 20px;
   }
 }
 

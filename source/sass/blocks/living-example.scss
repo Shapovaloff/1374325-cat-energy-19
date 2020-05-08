@@ -1,31 +1,51 @@
 .living-example {
+  padding-top: 16px;
   background-color: $grey;
+  padding-bottom: 36px;
 }
 
-.living-example__wrapper {
-  padding-top: 18px;
-  padding-bottom: 36px;
+.living-example__block-title {
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .living-example {
-    background-image: linear-gradient(to top, $grey 461px, #ffffff 461px);
+    background: none;
+    padding-top: 42px;
+    padding-bottom: 0;
   }
 
-  .living-example__wrapper {
-    padding-top: 42px;
-    padding-bottom: 69px;
+  .living-example__block-title {
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .living-example {
+    position: relative;
+    padding-top: 0;
+    background-image: linear-gradient(to left, $grey-silver 50%, $grey 50%);
+  }
+
   .living-example__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1300px;
-    margin: 0 auto;
-    padding-top: 11px;
     padding-left: 40px;
-    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .living-example__block-title {
+    margin-bottom: 0;
+    padding-top: 66px;
+    padding-bottom: 75px;
+    background-color: #ffffff;
+  }
+
+  .living-example__title {
+    display: block;
+    max-width: 47%;
   }
 }

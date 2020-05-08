@@ -91,18 +91,21 @@
               <p class="features__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="features__item features__item--profit">
-              <p class="features__item-text">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
+              <p class="features__item-text">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!</p>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="living-example">
-        <h3 class="visually-hidden">Пример похудения кота Бориса</h3>
+        <div class="living-example__block-title">
+          <div class="container">
+            <h3 class="living-example__title title">Живой пример</h3>
+          </div>
+        </div>
         <div class="living-example__wrapper">
-          <section class="example-info container">
-            <h2 class="example-info__title title">Живой пример</h2>
-            <p class="example-info__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example-info container">
+            <p class="example-info__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="example-info__stats">
               <ul class="example-info__list">
                 <li class="example-info__item">
@@ -116,39 +119,44 @@
               </ul>
               <p class="example-info__costs">Затраты на питание: <span class="example-info__sum">15 000 руб.</span></p>
             </div>
-          </section>
+          </div>
 
-          <section class="example-slider container">
-            <h3 class="visually-hidden">Фото пример</h3>
-            <div class="examlie-slider__block-img">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+          <div class="example-slider">
+            <div class="example-slider__wrapper">
+              <div class="example-slider__block">
+                <div class="example-slider__item example-slider__item--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="example-slider__img example-slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис до">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablett@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="example-slider__img example-slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис до">
+                  </picture>
+                </div>
+                <div class="example-slider__item example-slider__item--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="example-slider__img example-slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис после">
-              </picture>
-            </div>
-            <div class="example-slider__controls">
-              <button class="example-slider__btn example-slider__btn--before">Было</button>
-              <div class="example-slider__range">
-                <div class="example-slider__scale"></div>
-                <button class="example-slider__scale-btn" aria-label="Ползунок слайдера"></button>
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="example-slider__img example-slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис после">
+                  </picture>
+                </div>
               </div>
-              <button class="example-slider__btn example-slider__btn--after">Стало</button>
+              <div class="example-slider__controls">
+                <button class="example-slider__btn example-slider__btn--before">Было</button>
+                <div class="example-slider__range">
+                  <div class="example-slider__scale"></div>
+                  <button class="example-slider__scale-btn" aria-label="Ползунок слайдера"></button>
+                </div>
+                <button class="example-slider__btn example-slider__btn--after">Стало</button>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
 
@@ -186,27 +194,27 @@
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
-        <ul class="page-footer__social social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="social__icon social__icon--vkontakte" width="30" height="12">
+              <svg class="social-list__icon social-list__icon--vkontakte" width="30" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">
               <span class="visually-hidden">Инстаграм</span>
-              <svg class="social__icon social__icon--instagram" width="16" height="16">
+              <svg class="social-list__icon social-list__icon--instagram" width="16" height="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">
               <span class="visually-hidden">Фейсбук</span>
-              <svg class="social__icon social__icon--facebook" width="10" height="19">
+              <svg class="social-list__icon social-list__icon--facebook" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>

@@ -2,6 +2,10 @@
   @include reset-list();
 }
 
+.site-list__item {
+  border-bottom: 1px solid $border-color;
+}
+
 .site-list__link {
   display: block;
   padding: 22px 20px 23px 20px;
@@ -12,7 +16,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $dark;
-  border-bottom: 1px solid $border-color;
 }
 
 .site-list__link[href]:hover,
@@ -41,6 +44,7 @@
     margin-left: 35px;
     padding-top: 10px;
     padding-bottom: 6px;
+    border: none;
   }
 
   .site-list__link {
@@ -48,7 +52,6 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    border: none;
   }
 
   .site-list__link--active {

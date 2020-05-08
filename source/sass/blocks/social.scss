@@ -1,28 +1,28 @@
-.social__list {
+.social-list {
   @include reset-list();
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding-top: 17px;
   padding-bottom: 15px;
   border-top: 1px solid rgba(#000000, 0.1);
   border-bottom: 1px solid rgba(#000000, 0.1);
 }
 
-.social__item {
+.social-list__item {
   margin-left: 13px;
   margin-right: 13px;
 }
 
-.social__link {
+.social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
 
-  &:hover .social__icon,
-  &:focus .social__icon {
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
     fill: $accent-color;
   }
 
@@ -31,44 +31,44 @@
   }
 }
 
-.social__icon {
+.social-list__icon {
   fill: #666666;
 }
 
-.social__icon--vkontakte {
+.social-list__icon--vkontakte {
   width: 22px;
   height: 12px;
 }
 
-.social__icon--instagram {
+.social-list__icon--instagram {
   width: 16px;
   height: 16px;
 }
 
-.social__icon--facebook {
+.social-list__icon--facebook {
   width: 10px;
   height: 19px;
   margin-right: 6px;
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
+  .social-list {
     margin: 0;
     padding: 0;
     border: none;
   }
 
-  .social__icon--vkontakte {
+  .social-list__icon--vkontakte {
     width: 30px;
     height: 16px;
   }
 
-  .social__icon--instagram {
+  .social-list__icon--instagram {
     width: 23px;
     height: 23px;
   }
 
-  .social__icon--facebook {
+  .social-list__icon--facebook {
     width: 14px;
     height: 28px;
     margin-right: 17px;
